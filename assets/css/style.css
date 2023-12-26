@@ -17,8 +17,10 @@
   src: url(../font/titania/Titania-Regular.ttf);
 }
 :root {
-  --primary-color: #132a13;
-  --secondary-color: #f0f3bd;
+  /* --primary-color: #132a13;
+  --secondary-color: #f0f3bd; */
+    --primary-color: #8AB5AB;
+    --secondary-color: #D7E1E2;
   --font-regular: "Poppins", sans-serif;
   --font-bold: Rumbles Brave, sans-serif;
 }
