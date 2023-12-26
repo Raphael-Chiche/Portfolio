@@ -1,5 +1,5 @@
 .competences {
-  height: 100vh;
+  min-height: 100vh;
   background-color: white;
   color: var(--primary-color);
   display: flex;
@@ -101,6 +101,9 @@ h3 {
 @media screen and (max-width: 930px) {
   .projets {
     min-height: auto;
+  }
+  .competences .left img{
+    max-width: 80%;
   }
 }
 

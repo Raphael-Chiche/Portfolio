@@ -1,7 +1,8 @@
 .apropos {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: var(--secondary-color);
 }
 
@@ -29,6 +30,7 @@
   width: 50%;
   height: 100%;
   font-size: 1.2rem;
+  line-height: 2.2rem;
   color: var(--primary-color);
 }
 
@@ -71,7 +73,7 @@
 
 .logos-slide {
   display: inline-block;
-  animation: 5s slide infinite linear;
+  animation: 7s slide infinite linear;
 }
 
 .logos-slide img {
