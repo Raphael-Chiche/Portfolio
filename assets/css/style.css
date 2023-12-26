@@ -3,6 +3,8 @@
 @import url(competences.css);
 @import url(projets.css);
 @import url(assets.css);
+@import url(navbar.css);
+
 @font-face {
     font-family: Gavency;
     src: url(../font/Gavency.otf);
@@ -27,35 +29,6 @@ body{
     flex-direction: column;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #00000050;
-    font-family: 'Poppins', sans-serif;
-    backdrop-filter: blur(15px);
-}
-
-ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    gap: 35px;
-    margin: 20px;
-}
-
-li a{
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-size: 20px;
-}
-
-#txt{
-    right: 0;
-    margin: 1rem;
-    font-size: 2rem;
-}
 .accueil p{
     font-family: Gavency;
 }

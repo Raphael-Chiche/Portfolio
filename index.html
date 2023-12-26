@@ -7,14 +7,23 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body onload="startTime()">
-    <nav>
-      <ul>
-        <li><a href="#apropos">A propos</a></li>
-        <li><a href="#competence">Mes compétences</a></li>
-        <li><a href="#projets">Mes projets</a></li>
-      </ul>
+    <header>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <ul>
+          <li><a href="#apropos">A propos</a></li>
+          <li><a href="#competence">Mes competences</a></li>
+          <li><a href="#projets">Mes projets</a></li>
+        </ul>
+        
+      </nav>
       <div id="txt"></div>
-    </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
     <div class="accueil">
       <p class="prenom">
         RAPHAEL <br />
@@ -147,13 +156,14 @@
                 JS, PHP et SQL. Non seulement il a constitué un défi
                 passionnant, mais il a également ouvert les portes de ma
                 deuxième année d'études.
-                <br><br>
-                Le site, que j'ai nommé MusicChat, vise à créer une communauté en ligne
-                dédiée à la musique, où les utilisateurs peuvent partager leurs
-                découvertes, opinions et passions musicales de manière concise
-                et rapide, à la manière de Twitter. La plateforme offre une
-                interface utilisateur intuitive et attrayante, favorisant une
-                expérience utilisateur fluide et agréable.
+                <br /><br />
+                Le site, que j'ai nommé MusicChat, vise à créer une communauté
+                en ligne dédiée à la musique, où les utilisateurs peuvent
+                partager leurs découvertes, opinions et passions musicales de
+                manière concise et rapide, à la manière de Twitter. La
+                plateforme offre une interface utilisateur intuitive et
+                attrayante, favorisant une expérience utilisateur fluide et
+                agréable.
               </p>
 
               <img src="" alt="" />
@@ -287,9 +297,9 @@
           r="14"
         ></circle>
       </svg>
-      <img src="assets/images/up-arrow.png" alt="" id="arrowUp">
+      <img src="assets/images/up-arrow.png" alt="" id="arrowUp" />
     </div>
-    <div class="stars">
+    <!-- <div class="stars">
       <div class="star"></div>
       <div class="star"></div>
       <div class="star"></div>
@@ -340,6 +350,6 @@
       <div class="star"></div>
       <div class="star"></div>
       <div class="star"></div>
-    </div>
+    </div> -->
   </body>
 </html>
