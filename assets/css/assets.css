@@ -1,0 +1,15 @@
+.progress {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    mix-blend-mode: difference;
+    height: 100px;
+}
+
+.progress__value {
+    transition: stroke-dashoffset 0.3s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    
+}

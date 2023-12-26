@@ -1,0 +1,97 @@
+@import url(fond.css);
+@import url(propos.css);
+@import url(competences.css);
+@import url(projets.css);
+@import url(assets.css);
+@font-face {
+    font-family: Gavency;
+    src: url(../font/Gavency.otf);
+  }
+:root{
+    --primary-color: #132A13;
+    --secondary-color: #F0F3BD;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: grey;
+    color: white;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #00000050;
+    font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(15px);
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 35px;
+    margin: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+#txt{
+    right: 0;
+    margin: 1rem;
+    font-size: 2rem;
+}
+.accueil p{
+    font-family: Gavency;
+}
+
+.accueil{
+    font-size: 9rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    color: var(--secondary-color);
+}
+.accueil .metier{
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 930px){
+    
+    html{
+        font-size: 12px;
+    }
+    .accueil{
+        font-size: 7rem;
+    }
+    .accueil .metier{
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    html{
+        font-size: 12px;
+    }
+    .accueil{
+        font-size: 5rem;
+        min-height: 70vh;
+    }
+}

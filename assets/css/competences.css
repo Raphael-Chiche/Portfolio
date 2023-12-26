@@ -1,0 +1,128 @@
+.competences {
+  height: 100vh;
+  background-color: white;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+}
+
+.competences .left img {
+  max-width: 425px;
+}
+.competences .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.competences .left button {
+  padding: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+}
+.competences a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-family: Gavency;
+}
+
+.competences .right {
+  width: 50%;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.competences .right h2,
+h3 {
+  font-family: Gavency;
+}
+
+.competences .right h2 {
+  font-size: 3.2rem;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 0rem;
+}
+
+.competences .right h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.myProgress {
+  width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+}
+
+.myBar {
+  /* width: 10%; */
+  height: 20px;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  animation: progress 3s ease-in-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: var(--percentage);
+  }
+}
+
+.frontBackEnd {
+  padding: 0 20px 0 20px;
+}
+.frontBackEnd p {
+  font-family: Gavency;
+  padding: 0.25rem;
+}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translatex(-50px);
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+}
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 930px) {
+  .projets {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .competences {
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+  }
+
+  .competences .right{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frontBack{
+    display: flex;  
+  }
+
+  .competences .left img{
+    max-width: 300px;
+  }
+}
