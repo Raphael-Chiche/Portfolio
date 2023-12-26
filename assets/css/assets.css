@@ -23,6 +23,8 @@
   bottom: 0;
   right: 0;
   mix-blend-mode: difference;
+  opacity: 0;
+  transition: all 0.3s;
 }
 
 #arrowUp {

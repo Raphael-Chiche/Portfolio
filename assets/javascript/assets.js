@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
       arrowUp.style.opacity = "0";
       arrowUp.style.transform = "translateY(20px)";
     }
+
+    var round = document.querySelector(".progress-container");
+    if (window.scrollY > 150) {
+      round.style.opacity = "1";
+      round.style.transform = "translateY(0)";
+    } else {
+      round.style.opacity = "0";
+      round.style.transform = "translateY(20px)";
+    }
   });
 });
 
