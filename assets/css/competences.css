@@ -4,6 +4,7 @@
   color: var(--primary-color);
   display: flex;
   flex-direction: row;
+  padding-bottom: 2rem;
 }
 
 .competences .left img {
