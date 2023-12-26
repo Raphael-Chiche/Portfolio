@@ -1,15 +1,34 @@
 .progress {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    mix-blend-mode: difference;
-    height: 100px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+
+  height: 100px;
 }
 
 .progress__value {
-    transition: stroke-dashoffset 0.3s;
-    transform: rotate(-90deg);
-    transform-origin: 50% 50%;
-    
+  transition: stroke-dashoffset 0.3s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  mix-blend-mode: difference;
+}
+
+#arrowUp {
+  width: 50%;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s;
 }
