@@ -17,7 +17,7 @@ header nav ul li a {
     display: inline-block;
     color: var(--secondary-color);
     text-decoration: none;
-    font-family: 'Gavency';
+    font-family: var(--font-bold);
     font-size: 1.5rem;
     padding: 5px 0;
     margin: 0 10px;
@@ -45,7 +45,7 @@ header nav ul li a.active {
     padding: 5px 0;
     margin: 0 10px;
     transition: 0.2s;
-
+    font-family: var(--font-bold);
 }
 
 @media only screen and (max-width: 900px) {

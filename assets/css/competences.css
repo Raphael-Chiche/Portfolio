@@ -28,7 +28,7 @@
   text-decoration: none;
   color: var(--secondary-color);
   font-size: 1.5rem;
-  font-family: Gavency;
+  font-family: var(--font-bold);
 }
 
 .competences .right {
@@ -40,7 +40,7 @@
 
 .competences .right h2,
 h3 {
-  font-family: Gavency;
+  font-family: var(--font-bold);
 }
 
 .competences .right h2 {
@@ -86,7 +86,7 @@ h3 {
   padding: 0 20px 0 20px;
 }
 .frontBackEnd p {
-  font-family: Gavency;
+  font-family: var(--font-bold);
   padding: 0.25rem;
 }
 .animate-on-scroll {
