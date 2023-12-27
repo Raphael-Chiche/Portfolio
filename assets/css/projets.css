@@ -9,6 +9,20 @@
   padding: 3rem;
   color: var(--secondary-color);
 }
+.projets p{
+  text-align: center;
+}
+.projets a {
+  text-decoration: none;
+  color: var(--secondary-color);
+   transition: all 0.5s ease-in-out;
+  
+}
+.projets a:hover {
+  font-size: 1.2rem;
+  font-style: italic;
+ 
+}
 .projetContent {
   display: flex;
   flex-direction: column;
@@ -63,7 +77,7 @@
 .projetDesc {
   display: none;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .projetDesc.show {

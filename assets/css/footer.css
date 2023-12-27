@@ -13,10 +13,15 @@ footer > p {
   width: 50%;
 }
 
-footer p:hover {
+footer a {
+  color: var(--secondary-color);
+}
+footer p:hover{
   font-style: italic;
   cursor: pointer;
 }
+
+
 
 footer div {
   display: flex;
