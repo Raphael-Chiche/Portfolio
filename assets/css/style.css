@@ -38,6 +38,7 @@ body {
   background-color: grey;
   color: white;
   flex-direction: column;
+  cursor: none;
 }
 
 .accueil p {
@@ -56,6 +57,33 @@ body {
   font-size: 5rem;
 }
 
+.curseurcercle {
+  min-height: 32px;
+  min-width: 32px;
+  border-radius: 204px;
+  background-color: var(--primary-color);
+  position: fixed; 
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999;
+  transition: min-height 0.5s ease-in-out, min-width 0.5s ease-in-out; 
+  transform: translate(-50%, -50%); 
+}
+
+.grow {
+  min-height: 50px;
+  min-width: 50px;  
+  transform: translate(-50%, -50%); /* add this line */
+}
+
+.p {
+ display: none;
+}
+.hoverProjets{
+  display: block;
+}
 @media screen and (max-width: 930px) {
   html {
     font-size: 12px;

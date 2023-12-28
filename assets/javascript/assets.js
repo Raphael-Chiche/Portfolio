@@ -39,3 +39,23 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+// cursor
+
+function moveCircle(event) {
+  var circle = document.getElementsByClassName("curseurcercle")[0];
+  circle.style.left = event.clientX + "px"; 
+  circle.style.top = event.clientY + "px"; 
+}
+
+document.body.addEventListener("mousemove", moveCircle);
+
+document.body.addEventListener("click", function (event) {
+  var circle = document.getElementsByClassName("curseurcercle")[0];
+  circle.classList.add("grow");
+      setTimeout(function () {
+          circle.classList.remove("grow");
+      }, 500);
+});
+
