@@ -7,11 +7,12 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 10px;
 }
 
-footer > p {
+/* footer > p {
   width: 50%;
-}
+} */
 
 footer a {
   color: var(--secondary-color);
@@ -25,8 +26,8 @@ footer p:hover{
 
 footer div {
   display: flex;
-  width: 50%;
-  flex-direction: column;
+  /* width: 50%; */
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   font-size: 1.2rem;
@@ -36,7 +37,7 @@ footer div {
 @media screen and (max-width: 930px) {
   footer {
     flex-direction: column;
-    gap: 1rem;
+    /* gap: 1rem;  */
   }
 
   footer > p {
@@ -45,6 +46,7 @@ footer div {
 
   footer div {
     width: 100%;
+    justify-content: center;
   }
     
 }
