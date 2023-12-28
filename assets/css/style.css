@@ -19,8 +19,9 @@
 :root {
   /* --primary-color: #132a13;
   --secondary-color: #f0f3bd; */
-    --primary-color: #8AB5AB;
-    --secondary-color: #E6F4F5;
+    --primary-color: #2D5627;
+    --secondary-color: #F1F1C5;
+    --third-color: #fffff3;
   --font-regular: "Poppins", sans-serif;
   --font-bold: Rumbles Brave, sans-serif;
 }
