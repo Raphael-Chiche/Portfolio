@@ -57,26 +57,26 @@ body {
   font-size: 5rem;
 }
 
-.curseurcercle {
-  min-height: 32px;
-  min-width: 32px;
-  border-radius: 204px;
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
   background-color: var(--primary-color);
   position: fixed; 
-  mix-blend-mode: difference;
+  mix-blend-mode: hard-light;
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 99999999;
+  z-index: 99999999; /* so that it stays on top of all other elements */
   transition: min-height 0.5s ease-in-out, min-width 0.5s ease-in-out; 
-  transform: translate(-50%, -50%); 
+  
 }
 
-.grow {
+/* .grow {
   min-height: 50px;
   min-width: 50px;  
   transform: translate(-50%, -50%); /* add this line */
-}
+/* } */ 
 
 .p {
  display: none;
