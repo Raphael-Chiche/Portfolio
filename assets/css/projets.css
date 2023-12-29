@@ -12,13 +12,13 @@
 .projets p{
   text-align: center;
 }
-.projets a {
+.projets .linksProj {
   text-decoration: none;
   color: var(--secondary-color);
    transition: all 0.5s ease-in-out;
   
 }
-.projets a:hover {
+.projets .linksProj:hover {
   font-size: 1.2rem;
   font-style: italic;
  
@@ -167,5 +167,10 @@
     height: 200px;
     width: 200px;
     object-fit: cover;
+  }
+
+  .projetDesc .content p {
+    width: 80%;
+    line-height: 2rem;
   }
 }
