@@ -102,4 +102,10 @@ body {
     font-size: 5rem;
     min-height: 70vh;
   }
+  .circle{
+    display: none;
+  }
+  body{
+    cursor: auto;
+  }
 }
