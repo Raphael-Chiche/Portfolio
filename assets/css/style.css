@@ -88,6 +88,36 @@ body {
 .hoverProjets{
   display: block;
 }
+
+
+i{
+  position: absolute;
+  height: 200px;
+  background: linear-gradient(transparent, #fff);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  animation: animationetoile 5s linear infinite;
+  z-index: -1;
+}
+
+i:nth-child(3n+1){
+  background: linear-gradient(transparent, #afafaf);
+}
+i:nth-child(3n+2){
+  background: linear-gradient(transparent, #ffffff);
+}
+i:nth-child(3n+3){
+  background: linear-gradient(transparent, #8a8a8a);
+}
+
+@keyframes animationetoile{
+  0%{
+    transform: translateY(-200px);
+  }
+  100%{
+    transform: translateY(calc(100vh + 200px));
+  }
+}
 @media screen and (max-width: 930px) {
   html {
     font-size: 12px;
