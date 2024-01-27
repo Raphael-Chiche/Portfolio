@@ -49,3 +49,15 @@ for (let i = 0; i < projetResume.length; i++) {
     });
 }
 
+// Select all circles
+// const circles = document.querySelectorAll(".circle");
+
+projetContent.forEach(function(projet) {
+    projet.addEventListener('mouseover', function() {
+        circles.style.display = "none";
+    });
+  
+    projet.addEventListener('mouseout', function() {
+        circles.style.display = "block";
+    });
+  });

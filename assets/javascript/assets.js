@@ -4,7 +4,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
   var circumference = radius * 2 * Math.PI;
   circle.style.strokeDasharray = `${circumference} ${circumference}`;
   circle.style.strokeDashoffset = `${circumference}`;
+  var projets = document.querySelectorAll(".projetContent");
 
+  // Loop through each "projetContent" element
+  projets.forEach(function(projet) {
+    // Add an event listener for the mouseover event
+    projet.addEventListener('mouseover', function() {
+      // Change the shape of the circles
+      circles.forEach(function(circle) {
+        // circle.style.borderRadius = '0'; // Change '0' to the shape you want
+        circle.style.display = "none";
+      });
+    });
+
+    // Add an event listener for the mouseout event
+    projet.addEventListener('mouseout', function() {
+      // Change the shape of the circles back
+      circles.forEach(function(circle) {
+        // circle.style.borderRadius = '50%'; // Change '50%' to the original shape
+        circle.style.display = "block";
+      });
+    });
+  });
   function setProgress(percent) {
     var offset = circumference - (percent / 100) * circumference;
     circle.style.strokeDashoffset = offset;

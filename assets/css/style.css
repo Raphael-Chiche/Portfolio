@@ -70,6 +70,12 @@ body {
   z-index: 99999999; /* so that it stays on top of all other elements */
 }
 
+.circlePointer{ 
+  height: 50px;
+  width: 50px;
+  clip-path: polygon(0 0, 53% 13%, 30% 20%, 51% 42%, 41% 50%, 21% 27%, 13% 50%);
+  background-color: red ;
+}
 /* .grow {
   min-height: 50px;
   min-width: 50px;  

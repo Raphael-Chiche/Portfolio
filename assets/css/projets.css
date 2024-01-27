@@ -29,6 +29,10 @@
   border-bottom: 0.25rem solid var(--secondary-color);
 }
 
+.projetContent:hover {
+  cursor: pointer;
+}
+
 .projetContent:last-child {
   border-bottom: none;
 }
@@ -75,17 +79,20 @@
 }
 
 .projetDesc {
-  display: none;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+  /* display: none;
+  opacity: 0; */
+  max-height: 0;
+  overflow: clip;
+  transition: all 0.5s ease;
 }
 
 .projetDesc.show {
-  opacity: 1;
+  /* opacity: 1; */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  max-height: 1500px;
 }
 
 .projetDesc .link {
