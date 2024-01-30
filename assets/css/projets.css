@@ -9,19 +9,17 @@
   padding: 3rem;
   color: var(--secondary-color);
 }
-.projets p{
+.projets p {
   text-align: center;
 }
 .projets .linksProj {
   text-decoration: none;
   color: var(--secondary-color);
-   transition: all 0.5s ease-in-out;
-  
+  transition: all 0.5s ease-in-out;
 }
 .projets .linksProj:hover {
   font-size: 1.2rem;
   font-style: italic;
- 
 }
 .projetContent {
   display: flex;
@@ -109,6 +107,18 @@
 
 .projetDesc img {
   height: 50px;
+}
+
+.linkDerouler {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 56px;
+  /* background-color: var(--secondary-color); */
+  text-decoration: none;
+  /* color: var(--primary-color); */
+  font-size: 1.5rem;
+  font-family: var(--font-bold);
+  margin-bottom: 1rem;
 }
 
 /* .projetName:hover {
