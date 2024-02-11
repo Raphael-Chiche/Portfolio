@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Twiter</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body onload="startTime()">
+    <header>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#twiter"> Twiter</a></li>
+          <li><a href="#fonctionnement">Son fonctionnement</a></li>
+        </ul>
+      </nav>
+      <div id="txt"></div>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+    <div class="introTwiter" id="twiter">
+      <h1 class="titleTwiter">TWITER</h1>
+      <h2>Projet 1er année - Coding & Digital Innovation</h2>
+      <p>Le projet que j'ai entrepris en tant que <b>travail de fin d'année </b>marque une étape significative dans mon parcours académique. Il s'agit de la <b>conception</b> et de la <b>réalisation d'un site web de type Twitter</b>, spécifiquement axé sur le <b>domaine musical</b>. Ce projet m'a offert l'opportunité de <b>consolider</b> mes connaissances en <b>programmation web</b>, combinant des <b>compétences en HTML, CSS, JS, PHP et SQL</b>. Non seulement il a constitué un défi passionnant, mais il a également ouvert les portes de ma deuxième année d'études.
+        <br>
+        Le site, que j'ai nommé <b>MusicChat</b>, vise à créer une communauté en ligne dédiée à la musique, où les utilisateurs peuvent partager leurs découvertes, opinions et passions musicales de manière concise et rapide, à la manière de Twitter. La plateforme offre une interface utilisateur intuitive et attrayante, favorisant une expérience utilisateur fluide et agréable.</p>
+    </div>
+    <div class="contentTwiter" id="fonctionnement">
+      <div class="twiterText">
+        <h2>Son fonctionnement</h2>
+        <p>Comment fonctionne MusicChat ?</p>
+        <br>
+        <p>Le site est conçu pour être <b>simple</b> et <b>intuitif</b>. Les utilisateurs peuvent s'inscrire, se connecter et partager leurs pensées musicales en quelques clics.</p>
+        <br>
+        <p>La <b>page d'accueil</b> affiche les derniers messages publiés par les utilisateurs, tandis que la barre de navigation permet de consulter les messages les plus populaires, les messages de l'utilisateur, les messages des personnes suivies, etc. </p><br>
+        <p>La <b>page de profil</b> de l'utilisateur affiche ses informations personnelles et ses messages.</p><br>
+        <p>On peut <b>sélectionner une catégorie</b> et ne voir uniquement les chats de cette catégorie, par exemple si on choisit d'appuyer sur la catégorie rap, on ne voit que des chats qui ont l'a catégorie rap.</p>
+      </div>
+      <div class="twiterImg">
+        <img src="assets/images/gif_twitter.gif" alt="Gif avec les illutstrations des assets utilisé dans twiter" class="gifTwitter">
+      </div>
+    </div>
+
+    <div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <script src="assets/javascript/horloge.js"></script>
+    <script src="assets/javascript/loop.js"></script>
+    <script src="assets/javascript/competence.js"></script>
+    <script src="assets/javascript/projet.js"></script>
+    <script src="assets/javascript/assets.js"></script>
+    <div class="progress-container" onclick="topFunction()">
+      <svg class="progress" viewBox="0 0 32 32">
+        <circle
+          class="progress__value"
+          stroke="var(--secondary-color)"
+          stroke-width="2"
+          fill="var(--primary-color)"
+          cx="16"
+          cy="16"
+          r="14"
+        ></circle>
+      </svg>
+      <img src="assets/images/up-arrow-light.png" alt="" id="arrowUp" />
+    </div>
+
+    <footer>
+      <p>© Copyright 2024 | Raphaël CHICHE | Tous droits réservés.</p>
+      <div>
+        <p>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=raphaelchiche.rc@gmail.com"
+            target="_blank"
+            >raphaelchiche.rc@gmail.com</a
+          >
+        </p>
+        <p>06 46 80 49 08</p>
+        <a href="https://www.linkedin.com/in/chicheraphael/" target="_blank"
+          ><img src="assets/images/linkedin-beige.png" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

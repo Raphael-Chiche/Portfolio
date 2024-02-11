@@ -7,20 +7,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
   var projets = document.querySelectorAll(".projetContent");
 
   // Loop through each "projetContent" element
-  projets.forEach(function(projet) {
+  projets.forEach(function (projet) {
     // Add an event listener for the mouseover event
-    projet.addEventListener('mouseover', function() {
+    projet.addEventListener("mouseover", function () {
       // Change the shape of the circles
-      circles.forEach(function(circle) {
+      circles.forEach(function (circle) {
         // circle.style.borderRadius = '0'; // Change '0' to the shape you want
         circle.style.display = "none";
       });
     });
 
     // Add an event listener for the mouseout event
-    projet.addEventListener('mouseout', function() {
+    projet.addEventListener("mouseout", function () {
       // Change the shape of the circles back
-      circles.forEach(function(circle) {
+      circles.forEach(function (circle) {
         // circle.style.borderRadius = '50%'; // Change '50%' to the original shape
         circle.style.display = "block";
       });
@@ -61,13 +61,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
 // cursor
 
 // function moveCircle(event) {
 //   var circle = document.getElementsByClassName("curseurcercle")[0];
-//   circle.style.left = event.clientX + "px"; 
-//   circle.style.top = event.clientY + "px"; 
+//   circle.style.left = event.clientX + "px";
+//   circle.style.top = event.clientY + "px";
 // }
 
 // document.body.addEventListener("mousemove", moveCircle);
@@ -83,29 +82,26 @@ function topFunction() {
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
-
 circles.forEach(function (circle) {
   circle.x = 0;
   circle.y = 0;
 });
 
-window.addEventListener("mousemove", function(e){
+window.addEventListener("mousemove", function (e) {
   coords.x = e.clientX;
   coords.y = e.clientY;
-  
 });
 
 function animateCircles() {
-  
   let x = coords.x;
   let y = coords.y;
-  
+
   circles.forEach(function (circle, index) {
     circle.style.left = x - 12 + "px";
     circle.style.top = y - 12 + "px";
-    
+
     circle.style.scale = (circles.length - index) / circles.length;
-    
+
     circle.x = x;
     circle.y = y;
 
@@ -113,8 +109,36 @@ function animateCircles() {
     x += (nextCircle.x - x) * 0.3;
     y += (nextCircle.y - y) * 0.3;
   });
- 
+
   requestAnimationFrame(animateCircles);
 }
 
 animateCircles();
+
+var lienhoverElements = document.querySelectorAll(".lienhover");
+
+// Loop through each "lienhover" element
+lienhoverElements.forEach(function (lienhoverElement) {
+  // Add an event listener for the mouseover event
+  lienhoverElement.addEventListener("mouseover", function () {
+    // Select all elements with the class "circle"
+    console.log("hover");
+    var circlessouris = document.querySelectorAll(".circle");
+
+    // Loop through each "circle" element and change its color to red
+    circlessouris.forEach(function (circlesouris) {
+      circlesouris.style.backgroundColor = "red";
+    });
+  });
+
+  // Add an event listener for the mouseout event
+  lienhoverElement.addEventListener("mouseout", function () {
+    // Select all elements with the class "circle"
+    var circlessouris = document.querySelectorAll(".circle");
+
+    // Loop through each "circle" element and change its color back to its original color
+    circlessouris.forEach(function (circlesouris) {
+      circlesouris.style.backgroundColor  = ""; // Change '' to the original color
+    });
+  });
+});

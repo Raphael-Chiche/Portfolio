@@ -1,0 +1,85 @@
+.introTwiter{
+    background-color: var(--secondary-color);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--primary-color);
+    align-items: center; 
+    padding: 2rem;
+}
+.titleTwiter{
+    font-size: 9rem;
+    text-align: center;
+    font-family: var(--font-bold);
+}
+.titleTwiter::after{
+    content: "Création d'un microblog";
+    font-size: 1rem;
+    font-family: var(--font-regular);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentTwiter{
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    width: 100%;
+    color: var(--secondary-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.twiterText{
+    width: 60%;
+}
+
+.twiterImg{
+    width: 40%;
+}
+
+.gifTwitter{
+    width: 90%;
+
+}
+
+@media (max-width: 750px) {
+    .circle{
+        display: none;
+      }
+      body{
+        cursor: auto;
+      }
+    .titleTwiter{
+        font-size: 5rem;
+    }
+    .imgQrcode{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .contentTwiter{
+        font-size: 1.5rem;
+    }
+
+    .introTwiter{
+        font-size: 1.5rem;
+    }
+    .contentTwiter{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .twiterText{
+        width: 100%;
+    }
+    
+    .twiterImg{
+        width: 100%;
+    }
+    
+}
